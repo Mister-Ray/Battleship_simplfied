@@ -27,3 +27,5 @@ while (isSunk == false) {
         alert("You've missed!!")
     }
 }
+var stats = "You've guessed " + guess + "times and sunk the battleship." + "That means your accuracy is" + (3/guesses);
+alert(stats);
