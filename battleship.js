@@ -10,4 +10,9 @@ var isSunk = false;
 //guess loop
 while (isSunk == false) {
     guess = prompt("Ready! Steady! Shoot! (key in 0~6)");
+    if (guess < 0 || guess > 6) {
+        alert("Please key in an available digit");
+    } else {
+        guesses = guesses + 1;
+    }
 }
