@@ -14,17 +14,16 @@ while (isSunk == false) {
         alert("Please key in an available digit");
     } else {
         guesses = guesses + 1;
-    }
-
-    if (guess == location1 || guess == location2 || guess == location3) {
-        alert("Hit !!");
-        hits = hits + 1;
-        if (hits == 3) {
-            isSunk = true;
-            alert("You've sunk my battleship!")
+        if (guess == location1 || guess == location2 || guess == location3) {
+            alert("Hit !!");
+            hits = hits + 1;
+            if (hits == 3) {
+                isSunk = true;
+                alert("You've sunk my battleship!")
+            }
+        } else {
+            alert("You've missed!!")
         }
-    } else {
-        alert("You've missed!!")
     }
 }
 var stats = "You've guessed " + guess + "times and sunk the battleship." + "That means your accuracy is" + (3/guesses);
